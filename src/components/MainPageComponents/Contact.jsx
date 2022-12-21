@@ -12,6 +12,7 @@ export const Contact = () => {
 	const [show, setShow] = useState(false);
 
 	const ControlForm = (event) => {
+		event.stopPropagation();
 		event.preventDefault();
 		const xmlHttp = new XMLHttpRequest();
 		xmlHttp.open('POST', 'https://185.105.110.4:5500/feedback', true);

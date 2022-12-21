@@ -27,13 +27,14 @@ async def feedback(name: str = Form(),
                    email: str = Form(),
                    theme: str = Form(),
                    message: str = Form()):
-    bot.send_message(f"""
-    {name}
-    По теме:
-    {theme}
-    Написал:
-    {message}
-    Почта: {email}""")
+    # bot.send_message(f"""
+    # {name}
+    # По теме:
+    # {theme}
+    # Написал:
+    # {message}
+    # Почта: {email}""")
+    print(name, message)
     raise HTTPException(
         status_code=status.HTTP_200_OK
     )

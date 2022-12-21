@@ -21,10 +21,15 @@ module.exports = {
             200: '#AAAAAA',
             300: '#848484',
             400: '#151515',
+            500: '#444444',
         },
         'border-input': '#EBEBEB',
-        'button-hover': '#AF70E2',
+        'hover': '#AF70E2',
         'projectOverlay': "rgba(0, 0, 0, 0.8)",
+        'projectInfoPageHeader': "#EEEEEE",
+      },
+      boxShadow: {
+        'projectInfo': '0px 0px 20px rgba(0, 0, 0, 0.15)',
       },
       fontFamily: {
         "Raleway": [

@@ -14,7 +14,7 @@ export const Contact = () => {
 	const ControlForm = (event) => {
 		event.preventDefault();
 		const xmlHttp = new XMLHttpRequest();
-		xmlHttp.open('POST', 'https://188.17.149.193:5500/feedback', true);
+		xmlHttp.open('POST', 'https://185.105.110.4/feedback', true);
 		xmlHttp.send(new FormData(event.target));
 		xmlHttp.onreadystatechange = function () {
 			if (xmlHttp.readyState === 4) {
